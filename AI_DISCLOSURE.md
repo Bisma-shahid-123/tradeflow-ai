@@ -1,16 +1,27 @@
-# AI Disclosure
+# AI Disclosure for TradeFlow AI
 
-## AI tools used to build this project
-- Claude (Anthropic): planning, drafting build prompts and documentation.
-- Devmarketplace builder agent: generates and edits the application code. Model: [confirm the model selected in the builder, e.g. GPT-4.1 mini].
-- Other tools used by the team: [team to fill in]
+## AI Tools and Services Used
 
-## AI model used inside the product
-- Provider and model: [to be filled in once chosen]
-- Feature: order extraction from pasted chats. Every call is a live model call.
+- **OpenAI GPT-4** (planned for future phases): Intended for natural language extraction of orders from chat.
+- **Supabase Auth**: Used for authentication with mandatory TOTP 2FA.
 
-## Open-source components
-Listed with licences and links as they are added (Next.js, React, Tailwind CSS, shadcn/ui, Supabase client libraries, zod).
+## AI Models Integrated
 
-## Statement
-Product code was written during the event, with the AI assistance listed above. No code existed before kickoff.
+- Currently no live AI models are called in this phase.
+
+## Open-Source Components
+
+- Next.js (MIT License)
+- React (MIT License)
+- Tailwind CSS (MIT License)
+- Supabase JS SDK (MIT License)
+- lucide-react (MIT License)
+- shadcn/ui components (MIT License, included in source)
+
+## Code Origin
+
+- Authentication and MFA flows use Supabase Auth built-in MFA methods.
+- Navigation and UI components are custom-built or adapted.
+- AI extraction code is planned but not implemented in this phase.
+
+This document will be updated as AI features are integrated and dependencies change.

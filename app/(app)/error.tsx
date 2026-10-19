@@ -1,0 +1,27 @@
+"use client";
+
+import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+
+export default function AppError({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+}) {
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.error(error);
+  }, [error]);
+
+  return (
+    <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4">
+      <h2 className="text-lg font-semibold">Something went wrong</h2>
+      <p className="text-sm text-muted-foreground">
+        {error.message || "Please try again."}
+      </p>
+      <Button onClick={reset}>Try again</Button>
+    </div>
+  );
+}
